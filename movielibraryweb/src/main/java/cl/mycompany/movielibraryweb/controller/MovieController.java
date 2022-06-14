@@ -17,8 +17,4 @@ public class MovieController {
         return new ModelAndView("list-movies");
     }
 
-    @GetMapping("/edit-movie")
-    public ModelAndView getEditMoviePage(){
-        return new ModelAndView("edit-movie");
-    }
 }
