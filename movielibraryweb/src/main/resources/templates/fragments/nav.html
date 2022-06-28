@@ -1,0 +1,16 @@
+<nav th:fragment="navbar">
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" th:href="@{/home}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" th:href="@{/new-register}">New Register</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" th:href="@{/list-movies}">List Movies</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled">Edit Movie</a>
+        </li>
+    </ul>
+</nav>

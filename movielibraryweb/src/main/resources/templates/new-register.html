@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="fragments/header :: header">
+<body>
+<div th:insert="fragments/nav :: navbar"></div>
+
+<br>
+<h1>New Register</h1>
+<br>
+
+<div class="container">
+    <!-- Content here -->
+    <div class="row">
+        <div class="col">
+            <form>
+                <div class="mb-3">
+                    <label for="movieFindInpt" class="form-label">Movie name</label>
+                    <input type="text" class="form-control" id="movieFindInpt" placeholder="Movie find ...">
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="findMovieBtn">Find Movie</button>
+            </form>
+        </div>
+        <div class="col">
+            <!--No data-->
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container">
+    <h2>Movie information</h2>
+    <form>
+        <div class="row">
+            <div class="col">
+                <label for="movieInptDisabled" class="form-label">Movie</label>
+                <input type="text" class="form-control" placeholder="Goodfellas" name="movieDisabled" id="movieInptDisabled" disabled>
+            </div>
+
+            <div class="col">
+                <label for="yearInptDisabled" class="form-label">Year</label>
+                <input type="text" class="form-control" placeholder="1991" name="yearInptDisabled" id="yearInptDisabled" disabled>
+            </div>
+
+            <div class="col">
+                <label for="directorInptDisabled" class="form-label">Director</label>
+                <input type="text" class="form-control" placeholder="Martin Scorsese" name="directorInptDisabled" id="directorInptDisabled"
+                       disabled>
+            </div>
+
+            <div class="col">
+                <label for="studioInptDisabled" class="form-label">Studio</label>
+                <input type="text" class="form-control" placeholder="Warner Studio" name="studioInptDisabled" id="studioInptDisabled" disabled>
+            </div>
+        </div>
+    </form>
+</div>
+
+<br>
+
+<div class="container">
+    <h2>Movie edit data</h2>
+    <form>
+        <div class="row">
+            <div class="col">
+                <label for="formatTypeInpt" class="form-label">Format Type</label>
+                <select class="form-select" aria-label="Default select example" id="formatTypeInpt">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Blu-Ray</option>
+                    <option value="2">4K</option>
+                    <option value="3">Digital</option>
+                </select>
+            </div>
+
+            <div class="col">
+                <label for="storeInpt" class="form-label">Store</label>
+                <select class="form-select" aria-label="Default select example" id="storeInpt">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Amazon</option>
+                    <option value="2">AliExpress</option>
+                    <option value="3">Other</option>
+                </select>
+            </div>
+
+            <div class="col">
+                <label for="storeNameInpt" class="form-label">Store Name</label>
+                <input type="text" class="form-control" placeholder="Enter store name" name="storeNameInpt" id="storeNameInpt">
+            </div>
+
+            <div class="col">
+                <label for="currencyTypeInpt" class="form-label">Currency Type</label>
+                <select class="form-select" aria-label="Default select example" id="currencyTypeInpt">
+                    <option selected>Open this select menu</option>
+                    <option value="1">EURO</option>
+                    <option value="2">DOLLAR</option>
+                    <option value="3">Peso Chileno</option>
+                </select>
+            </div>
+
+            <div class="col">
+                <label for="priceInpt" class="form-label">Price</label>
+                <input type="text" class="form-control" placeholder="Enter price" name="priceInpt" id="priceInpt">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col">
+                <label for="movieDescription" class="form-label">Description</label>
+                <textarea class="form-control" id="movieDescription" rows="3"></textarea>
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-success" id="saveMovieBtn">Save Movie</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div th:insert="fragments/footer :: footer"></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="fragments/header :: header">
+<body>
+<div th:insert="fragments/nav :: navbar"></div>
+
+<br>
+    <h1>List Movies</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Movie</th>
+                    <th scope="col">Director</th>
+                    <th scope="col">Genre</th>
+                    <th scope="col">Store</th>
+                    <th scope="col">Format</th>
+                    <th scope="col">Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Goodfellas</td>
+                    <td>Martin Scorsese</td>
+                    <td>Mafia</td>
+                    <td>Amazon</td>
+                    <td>4K</td>
+                    <td>$30.00</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div th:insert="fragments/footer :: footer"></div>
+</body>
+</html>
